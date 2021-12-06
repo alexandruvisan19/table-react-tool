@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html {
+  width: 100%;
+  height: 100%;
 }
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table-responsive {
+  overflow-y: scroll;
+  height: 450px;
+}
+
+.td {
+    border: 1px solid rgb(200 200 200);
+    padding: 5px;
+    text-align: left;
+}
+
+#schedule-table td {
+  border: none
+}
+
+tr {
+    position: relative;
+}
+
+#schedule-table {
+    width: 700px;
+    margin-bottom: 0 !important;
+    border-radius: 10px;
+  }
+  
+  #schedule-table tr {
+    background-color: #dcefff;
+    padding: 0 !important;
+  }
+  
+  #schedule-table td {
+    padding: 15px !important;
+    text-align: left;
+  }
+  
+  #schedule-table td p {
+    padding: 15px !important;
+  }
+  
+  #schedule-table tbody {
+    position: relative;
+    padding: 10px;
+  }
+  
+  #schedule-table .arrow {
+    float: right;
+    width: 12px;
+    height: 10px;
+    background-size: 100%;
+    position: absolute;
+    top: 5px;
+    right: -4px;
+    background-image: url("//images.images4us.com/888poker/en/Slices_01-1488964110886_tcm1488-346912.png");
+    background-repeat: no-repeat;
+    background-position: right 0;
+    transition: 0.3s ease 0s;
+  }
+  
+  #schedule-table .arrowOn {
+    background-position: right -34px !important;
+  }
+  
+  body>#schedule-table>tbody>tr:nth-child(1) {
+    display: block !important;
+    display: table-row !important;
+  }
+
+  #schedule-table .eventDay {
+    background-color: #c6e5ff;
+  }
+
+  #schedule-table > tbody:nth-child(1) > tr {
+    background-color: rgb(0, 124, 247);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .arrow {
+    background-image: url("//images.images4us.com/888poker/en/Slices_01-1488964110886_tcm1488-346912.png");
+    background-repeat: no-repeat;
+    background-position: -13px -17px;
+    width: 20px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.row1 {
+  width: 200px;
+  padding: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: #dcefff;
+
+}
+.row1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.form-control {
+  width: 100%;
+}
+
+.format-table-btn {
+  margin: 20px;
+  display: inline-block;
+}
+.copy-table-btn {
+  margin: 20px;
+  display: inline-block;
+}
+button {
+  background-color: white;
+  border: 2px solid rgb(0, 124, 247);
+  padding: 8px 15px;
+  color: rgb(0, 124, 247);
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 124, 247); 
+}
+
+
+
+
